@@ -10,7 +10,7 @@
 
 body {
     font-family: 'JetBrains Mono', monospace;
-    background: linear-gradient(90deg #141318 0%, #09070B 100%);
+    background: linear-gradient(90deg, #141318 0%, #09070B 100%);
     color: #fff;
     width: 100vw;
     height: 100vh;
@@ -38,4 +38,88 @@ body {
 .password {
     font-size: 32px;
     font-weight: 700;
+}
+
+.password-copy {
+    border: none;
+    background-color: transparent;
+}
+
+.options-container {
+    background-color: #24232C;
+    width: 540px;
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+}
+
+.text {
+    font-size: 18px;
+} 
+
+.length-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.length {
+    color: #a4ffaf;
+    font-size: 32px;
+}
+
+.slider {
+    appearance: none;
+}
+
+.slider::-webkit-slider-thumb {
+    appearance: none;
+    background-color: #E6E5EA;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: -12px;
+}
+
+.slider::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 4px;
+    cursor: pointer;
+    background-color: #a4ffaf;
+}
+
+.input-container {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin: 20px 0 20px 0;
+}
+
+.input-container input {
+    appearance: none;
+    background-color: white;
+    height: 16px;
+    width: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.input-container input:checked {
+    appearance: none;
+    background-color: #a4ffaf;
+    height: 16px;
+    width: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+}
+
+.btn-generate {
+    background-color: #a4ffaf;
+    height: 45px;
+    border: none;
+    cursor: pointer;
+    font-family: 'JetBrains Mono', monospace;
 }
